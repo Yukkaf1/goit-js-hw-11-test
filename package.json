@@ -9,7 +9,8 @@
     "start": "parcel",
     "build": "parcel build src/index.html --public-url ./",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist"
+    "deploy": "gh-pages -d dist",
+    "server": "json-server --watch db.json"
   },
   "repository": {
     "type": "git",
@@ -32,6 +33,7 @@
     "simplelightbox": "^2.11.0"
   },
   "devDependencies": {
+    "json-server": "^0.17.1",
     "parcel": "^2.8.0"
   }
 }
